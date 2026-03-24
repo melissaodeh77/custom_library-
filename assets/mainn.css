@@ -19,3 +19,21 @@
     display: flex;
     gap: 24px; 
 }
+.collections{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+     margin: 0 165px;
+}
+.collection{
+    width:calc((100% - 90px)/4);
+}
+.img{
+    width:100%;
+}
+h2{
+    margin-top: 23px;
+}
