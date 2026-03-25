@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 .header{
-    display: flex;
-    gap:232.5px;
+    
     padding: 21.84px;
-    margin: 0 165px;
+    
+    
+}
+.container{
+    margin: 0 auto;
+    width: calc(100% - 330px);
+
+}
+.row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;  
 }
 .list ul{
     list-style-type: none;
@@ -26,14 +37,21 @@
     flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 40px;
-     margin: 0 165px;
+    
 }
 .collection{
     width:calc((100% - 90px)/4);
+    text-align: center;
 }
 .img{
     width:100%;
 }
 h2{
     margin-top: 23px;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color:#3A3845;
 }
