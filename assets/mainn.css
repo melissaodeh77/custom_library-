@@ -1,57 +1,117 @@
-*{
-    margin : 0;
-    padding : 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.header{
-    
-    padding: 21.84px;
-    
-    
+
+html {
+    --primaryColor: #3A3845;
 }
-.container{
-    margin: 0 auto;
-    width: calc(100% - 330px);
+
+.header {
+
+    padding: 21.84px;
+
 
 }
-.row{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;  
+
+.container {
+    margin: 0 auto;
+    width: calc(100% - 20%);
+
 }
-.list ul{
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list ul {
     list-style-type: none;
     display: flex;
     gap: 60px;
 }
-.icon ul{
+
+.icon ul {
     list-style-type: none;
     display: flex;
-    gap: 24px; 
+    gap: 24px;
 }
-.collections{
+
+.menu {
+    display: none;
+}
+
+.collections {
     display: flex;
     text-align: center;
     gap: 30px;
     flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 40px;
-    
+
 }
-.collection{
-    width:calc((100% - 90px)/4);
+
+.collection {
+    width: calc((100% - 90px)/4);
     text-align: center;
 }
-.img{
-    width:100%;
+
+.img {
+    width: 100%;
 }
-h2{
-    margin-top: 23px;
+
+h2 {
+    /*margin-top: 23px;*/
+    text-transform: capitalize;
+    /*color:#3A3845;*/
+    color: var(--primaryColor);
 }
-a{
+
+a {
     text-decoration: none;
     font-size: 14px;
     font-family: "Inter", sans-serif;
-    color:#3A3845;
+    /*color:#3A3845;*/
+    color: var(--primaryColor);
+}
+
+@media screen and (min-width:0) and (max-width:996px) {
+    .list {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:0) and (max-width:400px) {
+    .collections .row {
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:770px) {
+    .collection {
+        width: calc((100% - 30px)/2);
+
+    }
+}
+
+@media screen and (min-width:771px) and (max-width:900px) {
+    .collection {
+        width: calc((100% - 60px)/3);
+
+    }
 }
