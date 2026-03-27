@@ -6,6 +6,20 @@
 
 html {
     --primaryColor: #3A3845;
+    --primaryfont: "Inter";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "EB Garamond", serif;
+}
+
+body {
+    font-family: var(--primaryfont);
 }
 
 .header {
@@ -13,6 +27,14 @@ html {
     padding: 21.84px;
 
 
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    /*color:#3A3845;*/
+    color: var(--primaryColor);
 }
 
 .hero {
@@ -60,29 +82,25 @@ html {
 
 }
 
-.collection {
-    width: calc((100% - 90px)/4);
-    text-align: center;
-}
-
-.img {
-    width: 100%;
-}
-
-h2 {
+.collections h2 {
     /*margin-top: 23px;*/
     text-transform: capitalize;
     /*color:#3A3845;*/
     color: var(--primaryColor);
 }
 
-a {
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Inter", sans-serif;
-    /*color:#3A3845;*/
-    color: var(--primaryColor);
+.collection {
+    width: calc((100% - 90px)/4);
+    text-align: center;
 }
+
+
+.img {
+    width: 100%;
+}
+
+
+
 
 @media screen and (min-width:0) and (max-width:996px) {
     .list {
@@ -119,5 +137,82 @@ a {
     .collection {
         width: calc((100% - 60px)/3);
 
+    }
+}
+
+.demo img {
+    width: 555px;
+    height: 348px;
+}
+
+.best_sellers {
+    text-align: center;
+    padding: 80px 0;
+}
+.best_sellers .item {
+    text-align: left;
+}
+.best_sellers h2{
+    font-size: 30px;
+    font-weight:  700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 48px;
+}
+.best_sellers h3{
+    font-size: 14px;
+    font-weight:  600;
+    text-transform: uppercase;
+    letter-spacing: 6%;
+    margin-bottom: 12px;
+}
+.best_sellers .price{
+    font-size: 14px;
+    font-weight:  600;
+}
+.best_sellers p{
+    color: #807F86;
+    width:80%;
+    font-size: 14px;
+    font-weight:  300;
+    line-height: 22px;
+    margin-top: 24px;
+    margin-bottom: 38px;
+}
+.best_sellers .add-to-card{
+    padding:15px 81px;
+    background-color: #fff;
+    border: 1px solid #000;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+.best_sellers .item{
+    margin-top: 24px;
+    width:calc((100% - 90px)/4);
+}
+.best_sellers .row{
+    gap:30px;
+}
+@media screen and (min-width:0) and (max-width:400px){
+    .best_sellers .item{
+        width:100%;
+    }
+}
+@media screen and (min-width:401px) and (max-width:700px){
+    .best_sellers .item{
+        width:calc((100% - 30px)/2);
+    }
+        .best_sellers .add-to-card{
+        padding: 15px 50px;
+    }
+}
+@media screen and (min-width:701px) and (max-width:960px){
+    .best_sellers .item{
+        width:calc((100% - 60px)/3);
+    }
+    .best_sellers .add-to-card{
+        padding: 15px 50px;
     }
 }
